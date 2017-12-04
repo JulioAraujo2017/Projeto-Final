@@ -49,7 +49,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             .position(new LatLng(marker.getLatitude(), marker.getLongitude()))
                             .title(marker.getEndereco())
                             .snippet("TOTAL DE CRIMES: " + marker.getTotalCrimes() + "   CRIMES FATAIS: " + marker.getCrimesFatais())
-                            .icon(BitmapDescriptorFactory.fromResource(R.drawable.crime_red))
+                            .icon(BitmapDescriptorFactory.fromResource(R.mipmap.crime_green))
                     );
                 }
                 else if(marker.getTotalAcidentes() <= 3){
@@ -57,7 +57,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             .position(new LatLng(marker.getLatitude(), marker.getLongitude()))
                             .title(marker.getEndereco())
                             .snippet("TOTAL DE CRIMES: " + marker.getTotalCrimes() + "   CRIMES FATAIS: " + marker.getCrimesFatais())
-                            .icon(BitmapDescriptorFactory.fromResource(R.drawable.crime_green))
+                            .icon(BitmapDescriptorFactory.fromResource(R.mipmap.crime_green))
                     );
                 }
                 else{
@@ -65,7 +65,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             .position(new LatLng(marker.getLatitude(), marker.getLongitude()))
                             .title(marker.getEndereco())
                             .snippet("TOTAL DE CRIMES: " + marker.getTotalCrimes() + "   CRIMES FATAIS: " + marker.getCrimesFatais())
-                            .icon(BitmapDescriptorFactory.fromResource(R.drawable.crime_yellow))
+                            .icon(BitmapDescriptorFactory.fromResource(R.mipmap.crime_yellow))
                     );
                 }
             }
