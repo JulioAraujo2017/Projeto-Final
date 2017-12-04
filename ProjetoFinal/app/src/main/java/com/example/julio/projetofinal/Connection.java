@@ -22,7 +22,7 @@ public class Connection {
         HttpURLConnection urlConnection = null;
 
         try {
-            url = new URL("https://api.myjson.com/bins/5c32y");
+            url = new URL("https://api.myjson.com/bins/19wier");
             urlConnection = (HttpURLConnection) url.openConnection();
             InputStream in = urlConnection.getInputStream();
             InputStreamReader isw = new InputStreamReader(in);
